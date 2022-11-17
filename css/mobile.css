@@ -1,0 +1,111 @@
+/* Mobile Version */
+@media (max-width: 992px) {
+    div#kanan {
+        order: 1;
+    }
+
+    div#kiri {
+        order: 2;
+    }
+
+    .navbar-nav {
+        margin-top: 20px;
+    }
+
+    hr {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .pemisah {
+        margin-top: 80px;
+    }
+
+    .mobile-center {
+        justify-content: center;
+    }
+
+    .ourservice {
+        margin-right: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .ukuran {
+        width: 80%;
+    }
+
+    .interested {
+        background: linear-gradient(269.64deg, #01021F -0.72%, #020429 99.69%);
+        border-radius: 10px;
+        height: 146px;
+    }
+
+    .interested h3 {
+        font-style: normal;
+        font-weight: bold;
+        color: white;
+        font-size: 20px;
+    }
+
+    footer {
+        height: 250px;
+    }
+
+    footer h3 {
+        color: white;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    footer p {
+        color: white;
+        font-weight: normal;
+        padding-top: 30px;
+        padding-left: 20px;
+    }
+
+    footer p a {
+        color: white;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+
+    footer p a:hover {
+        text-decoration: none;
+        color: #00C6C1;
+        transition: 0.5s;
+    }
+
+    footer p span {
+        font-weight: bold;
+    }
+
+    footer img {
+        padding-left: 20px;
+        padding-top: 40px;
+        transition: 0.5s;
+    }
+
+    footer img:hover {
+        opacity: 0.7;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: none;
+    }
+
+    .hiasan {
+        display: none;
+    }
+
+}
+
+@media (max-width: 697px) {
+    .section-one-left .sosmed {
+        padding: 0 0;
+        padding-left: 20px;
+    }
+}

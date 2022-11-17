@@ -1,0 +1,532 @@
+body {
+    background-color: #000116;
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#scrollPath {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#progressbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+#progressbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(10px);
+}
+
+#progressbar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
+}
+
+.navbar {
+    background-color: #000116;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.navbar-brand span {
+    font-size: 25px;
+    font-weight: normal;
+    color: #00C6C1;
+    display: block;
+    position: absolute;
+    top: 40px;
+}
+
+.navbar-nav .active {
+    font-weight: bold;
+}
+
+.nav-link {
+    margin-right: 30px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.navbar-nav img {
+    margin-right: 10px;
+}
+
+.tombol {
+    border-radius: 10px;
+    background-color: white;
+    width: 133px;
+    height: 37px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.tombol:hover {
+    opacity: 0.8;
+    transition: 300ms;
+}
+
+.section-one-left p:nth-child(1) {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 111px;
+    color: #00C6C1;
+}
+
+.section-one-left p:nth-child(2) {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 61px;
+    color: white;
+    margin-top: 10px;
+}
+
+.section-one-left p:nth-child(3) {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    line-height: 25px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+
+}
+
+.section-one-left a {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 0;
+}
+
+.section-one-left a img {
+    margin-right: 10px;
+}
+
+.section-one-left a img:hover {
+    opacity: 0.7;
+    transition: 300ms;
+}
+
+.section-one-left .sosmed {
+    padding: 0 25px;
+}
+
+.tombol2 {
+    border-radius: 10px;
+    background-color: #00C6C1;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.tombol2:hover {
+    opacity: 0.8;
+    transition: 300ms;
+}
+
+#home {
+    overflow: hidden;
+}
+
+.section-one-right img {
+    width: 100%;
+}
+
+.ourservice {
+    background-color: #0E0F32;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.ourservice:hover {
+    transform: translateY(-20px);
+}
+
+.ourservice a {
+    text-decoration: none;
+}
+
+.service h4 {
+    color: white;
+    font-size: 16px;
+}
+
+.service h6 {
+    color: white;
+    text-decoration: none;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 80px;
+    color: white;
+    margin-left: 15px;
+}
+
+.service img {
+    padding-top: 20px;
+}
+
+.service h4 {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.service h6 {
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 15px;
+    opacity: 0.6;
+}
+
+.deskripsi {
+    margin-left: -15px;
+    color: white;
+    margin-top: 80px;
+}
+
+.deskripsi h3 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.deskripsi h6 {
+    margin-top: 50px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.deskripsi button {
+    margin-top: 25px;
+    background-color: transparent;
+    border-radius: 10px;
+    color: #00C6C1;
+    width: 195px;
+    height: 50px;
+    border: 1px solid white;
+}
+
+.deskripsi button:hover {
+    color: white;
+    border: 1px solid #00C6C1;
+    transition: 500ms;
+}
+
+/* G A L L E R Y */
+
+#gallery {
+    overflow: hidden;
+}
+
+.title2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 80px;
+    color: white;
+    margin-right: 15px;
+}
+
+.gallery1 img {
+    width: 100%;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.gallery1 img:hover {
+    transform: translateY(-20px);
+    transition: 0.5s;
+}
+
+.gallery-img a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.gallery-img a:hover {
+    color: #00C6C1;
+    transition: 0.5s;
+}
+
+.gallery2 img {
+    width: 100%;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.gallery2 img:hover {
+    transform: translateY(-20px);
+    transition: 0.5s;
+}
+
+.gallery3 img {
+    width: 100%;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.gallery3 img:hover {
+    transform: translateY(-20px);
+    transition: 0.5s;
+}
+
+/* S K I L L   &   T O O L S */
+
+#tools {
+    overflow: hidden;
+}
+
+#tools h1 {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.tool-img p {
+    color: white;
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+.img-tools {
+    background-color: #0E0F32;
+    margin: 20px;
+    border-radius: 20px;
+    width: 195px;
+    height: 190px;
+}
+
+.img-tools img {
+    padding-top: 37px;
+    padding-bottom: 20px;
+}
+
+/* I N T E R E S T E D */
+
+.interested img {
+    transition: 0.5s;
+}
+
+.interested img:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+footer {
+    margin-top: 150px;
+    background-color: #02031D;
+    width: 100%;
+    height: 326px;
+}
+
+/* Dekstop Version */
+@media (min-width: 992px) {
+
+    .section-one-right img {
+        margin-top: 80px;
+    }
+
+    .section-one-left {
+        margin-top: 80px;
+    }
+
+    #features p {
+        margin-top: 150px;
+    }
+
+    hr {
+        width: 625px;
+        margin-bottom: 100px;
+    }
+
+    .ourservice {
+        margin-left: 15px;
+    }
+
+    .pemisah {
+        margin-top: 200px;
+    }
+
+    .ukuran {
+        width: 65%;
+    }
+
+    .interested {
+        background: linear-gradient(269.64deg, #01021F -0.72%, #020429 99.69%);
+        border-radius: 10px;
+        height: 146px;
+    }
+
+    .interested h3 {
+        font-style: normal;
+        font-weight: bold;
+        color: white;
+        font-size: 25px;
+    }
+
+    footer h3 {
+        color: white;
+        font-weight: bold;
+        padding-top: 100px;
+        padding-left: 80px;
+        text-align: center;
+    }
+
+    footer p {
+        color: white;
+        font-weight: normal;
+        padding-left: 80px;
+        text-align: center;
+    }
+
+    footer p a {
+        color: white;
+        text-decoration: none;
+        transition: 0.5s;
+        text-align: center;
+    }
+
+    footer p a:hover {
+        text-decoration: none;
+        color: #00C6C1;
+        transition: 0.5s;
+    }
+
+    footer p span {
+        font-weight: bold;
+    }
+
+    footer img {
+        padding-left: 80px;
+        padding-top: 20px;
+        transition: 0.5s;
+
+
+    }
+
+
+
+    footer img:hover {
+        opacity: 0.7;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: none;
+    }
+
+    .hiasan {
+        width: 30%;
+        float: right;
+        margin-top: -200px;
+    }
+}
+
+
+
+/* card-certificates */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.certificate .carousel-inner {
+    height: 500px;
+}
+
+.carousel-item h3,
+.carousel-item p {
+    text-align: center;
+}
+
+#certificate-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-inner {
+    padding: 20px;
+}
+
+#header-text h4,
+#header-text p {
+    text-align: center;
+}
+
+.certificate .carousel-inner {
+    height: 430px !important;
+}
+
+.carousel-inner {
+    padding: 24px;
+}
+
+.carousel-inner h3 {
+    text-align: left;
+}
